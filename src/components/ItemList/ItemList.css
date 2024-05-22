@@ -1,0 +1,16 @@
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .item-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .item-card img {
+    width: 100px;
+  }
+  

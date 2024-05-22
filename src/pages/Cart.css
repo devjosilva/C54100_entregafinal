@@ -1,0 +1,22 @@
+.cart {
+    padding: 1rem;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    margin-bottom: 1rem;
+  }
+  
+  .cart button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  

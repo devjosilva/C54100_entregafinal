@@ -1,27 +1,28 @@
-# React + Vite: Consigna
+# React + Vite
 
-una app de un e-commerce para poder vender productos de un rubro a elección:
+# Objetivo: Desarrollar una aplicación de e-commerce para vender productos de un rubro a elección, utilizando React 10.2.4 y Vite.
+
+### Componentes Requeridos:
+
+-   NavBar: Barra de navegación con logo/ícono, enlaces a las páginas (home, quienes somos, productos, contacto) y un ícono para el carrito de compras. Incluir menú hamburguesa y CSS.
+-   Catálogo: Listado de productos.
+-   Detalle de Producto: Tarjeta con la información detallada del producto.
+-   CartContext: Contexto para manejar el estado del carrito de compras.
+-   CartWidget: Ícono del carrito de compras.
+-   Página Principal: Con header y footer para redes sociales.
+-   Página de Productos: Listado de productos obtenidos desde Firestore.
+-   ItemDetail: Página de detalle del producto con funcionalidad para añadir al carrito.
+-   App.jsx: Maneja el estado del carrito y redirección al carrito.
+
+# Consideraciones
+-   Utilizar React Router DOM v6 para la navegación.
+-   Implementar Context API para el estado global del carrito.
+-   Conectar la aplicación con Firestore para obtener y gestionar los productos.
+-   Diseñar los componentes con CSS modularizado y responsivo.
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-### Componentes:
-- Navbar = Contiene los links para la navegar en la app, el logo y el ícono del carrito.
-- Catálogo = Catalogo con los productos.
-- Detalle de producto = Detalle de los productos.
-- CartContext = Contiene programación para mostrar el estado del contenido del carrito de compras.
-- CartWidget = Ícono del carrito de compras.
-
-### Detalle:
-- NavBar (link de navegacion en la app)
-- CartWidget (carrito de compras)
-- ItemListContainer (programación para leer la base de datos y obtener los productos)
-- ItemList (recibe producto para visualizar cada item de la lista del catálogo)
-- ItemDetailContainer (funcionalidad para crear el ItemDetail, detalles del producto.)
-- ItemDetail (recibe itemdetail que envía ItemDetailContainer)
--   ItemQuantitySelector (Botones que aumentan o disminuyen la cantidad a añadir al carrito de compras)
--   Description (detalle del producto)
--   AddItemButton (añade al carrito de compras)
-- Checkout
--  Brief (detalle de compra)
-
